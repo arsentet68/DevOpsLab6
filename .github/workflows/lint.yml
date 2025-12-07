@@ -1,4 +1,4 @@
-name: ansible-list
+name: ansible-lint
 on:
   push:
     branches: ["master"]
