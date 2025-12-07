@@ -1,0 +1,12 @@
+name: ansible-list
+on:
+  push:
+    branches: ["master"]
+jobs:
+  build:
+    name: Ansible Lint
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run ansible-Lint
+        uses: ansible/ansible-lint@main
